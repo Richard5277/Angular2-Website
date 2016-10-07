@@ -5,12 +5,13 @@ import { CourseService } from './course.service';
 @Component({
     selector: 'my-courses',
     template:
-    '<section><li *ngFor="let course of courses" class="course"><span><h2>Course Name: {{course.name}}</h2></span>' +
-    '<h3>Instructor: {{course.instructor}}</h3>' +
-    '<h4>ClassRoom: {{course.classRoom}}</h4>' +
-    '<p>Course Discription: {{course.discription}}</p>' +
-    '<button (click)="onSelect(course)" [class.selectedCourse]="course === selectedCourse">Detail</button></li></section>' +
-    '<my-course-detail [course]="selectedCourse"></my-course-detail>',
+    '<div class="row">' +
+    '<div class="col-xs-8"><div *ngFor="let course of courses" class="col-xs-10 course">' +
+    '<span><h2>Course Name: {{course.name}}</h2></span>' +
+    '<h3>Course Discription: {{course.discription}}</h3>' +
+    '<img src="{{course.image}}" class="img-rounded"> ' +
+    '<button (click)="onSelect(course)" [class.selectedCourse]="course === selectedCourse" class="btn btn-primary btn-sm">Detail</button></div></div>' +
+    '<my-course-detail [course]="selectedCourse" class="col-xs-4"></my-course-detail></div>',
     providers: [CourseService]
 })
 export class CoursesComponent implements OnInit {

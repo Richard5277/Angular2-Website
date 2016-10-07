@@ -18,6 +18,9 @@ var app_component_1 = require('./app.component');
 var course_detail_component_1 = require('./course-detail.component');
 var courses_component_1 = require('./courses.component');
 var course_service_1 = require('./course.service');
+var schedule_component_1 = require('./schedule.component');
+var contact_component_1 = require('./contact.component');
+var schedule_detail_coponent_1 = require('./schedule-detail.coponent');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,13 +31,29 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 router_1.RouterModule.forRoot([
                     {
+                        path: '',
+                        redirectTo: '/courses',
+                        pathMatch: 'full'
+                    },
+                    {
                         path: 'courses',
                         component: courses_component_1.CoursesComponent
+                    },
+                    {
+                        path: 'schedule',
+                        component: schedule_component_1.ScheduleComponent
+                    },
+                    {
+                        path: 'contact',
+                        component: contact_component_1.ContactComponent
                     }
                 ])
             ],
             declarations: [
                 app_component_1.AppComponent,
+                schedule_detail_coponent_1.ScheduleDetailComponent,
+                schedule_component_1.ScheduleComponent,
+                contact_component_1.ContactComponent,
                 course_detail_component_1.CourseDetailComponent,
                 courses_component_1.CoursesComponent
             ],

@@ -20,7 +20,7 @@ var CourseDetailComponent = (function () {
     CourseDetailComponent = __decorate([
         core_1.Component({
             selector: 'my-course-detail',
-            template: "\n    <div *ngIf=\"course\">\n      <h2>{{course.detail}}</h2>\n    </div>\n  "
+            template: "\n            <div *ngIf=\"course\" class=\"fixed list-group \">\n                <span><h2 style=\"color: #f4f7f5;\">{{ course.name }}</h2></span>\n                <span class=\"list-group-item detail\">\n                    <h4 class=\"list-group-item-heading\">Course ID:</h4>\n                    <p class=\"list-group-item-text\">{{ course.id}}</p>\n                </span>\n                <span class=\"list-group-item detail\">\n                    <h4 class=\"list-group-item-heading\">Course Instructor:</h4>\n                    <p class=\"list-group-item-text\">{{ course.instructor}}</p>\n                </span>\n                <span class=\"list-group-item detail\">\n                    <h4 class=\"list-group-item-heading\">Classroom:</h4>\n                    <p class=\"list-group-item-text\">{{ course.classRoom}}</p>\n                </span>\n                <span class=\"list-group-item detail\">\n                    <h4 class=\"list-group-item-heading\">Resources:</h4>\n                    <p class=\"list-group-item-text\">{{ course.resource}}</p>\n                </span>\n                <span class=\"list-group-item detail\">\n                    <h4 class=\"list-group-item-heading\">Course Detail:</h4>\n                    <p class=\"list-group-item-text\">{{ course.detail}}</p>\n                </span>\n            </div>\n"
         }), 
         __metadata('design:paramtypes', [])
     ], CourseDetailComponent);

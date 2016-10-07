@@ -2,11 +2,24 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-app',
     template: `
-    <h1>Zop</h1>
-    <nav><a class="menu" routerLink="/courses" routerLinkActive="active">My Courses</a>
-    <a class="menu" routerLink="/schedule" routerLinkActive="active">Schedule</a>
-    <a class="menu" routerLink="/contact" routerLinkActive="active">Contact</a></nav>
+    <div class="row">    
+    <nav class="navbar navbar-inverse navbar-fixed-top col-xs-10 vertical-center" style="left: 8vw;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Zop</a>
+            </div>
+        <ul class="nav navbar-nav" style="padding-left: 6rem;">
+          <li><a routerLink="/courses" routerLinkActive="active">My Courses</a></li>
+          <li><a routerLink="/schedule" routerLinkActive="active">Schedule</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="col-xs-10 main">
     <router-outlet></router-outlet>
+    </div>
+    </div>
   `
 })
 export class AppComponent {

@@ -12,6 +12,7 @@ import { CoursesComponent }     from './courses.component';
 import { CourseService }         from './course.service';
 import { ScheduleComponent } from './schedule.component';
 import { ContactComponent } from './contact.component';
+import { ScheduleDetailComponent } from './schedule-detail.coponent';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ContactComponent } from './contact.component';
     ],
     declarations: [
         AppComponent,
+        ScheduleDetailComponent,
         ScheduleComponent,
         ContactComponent,
         CourseDetailComponent,

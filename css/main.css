@@ -31,38 +31,118 @@
   src: url(../fonts/Chunkfive.otf);
 }
 /* Master Styles */
-body {
-  background-color: #595959;
-  margin: 2em;
+@media screen and (max-width: 767px) {
+  body {
+    background-color: #595959 !important;
+    margin: 0;
+    padding: 0;
+  }
+  .course {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 1.2rem;
+    border: 3px solid #595959;
+    color: #f4f7f5;
+  }
+  .course img {
+    width: 100px;
+    height: 90px;
+  }
+  .main {
+    top: 20rem;
+    color: #f4f7f5;
+  }
+  .fixed {
+    position: fixed;
+    top: 30rem;
+    width: 30%;
+  }
+  .detail {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: #f4f7f5;
+  }
+  .vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-brand {
+    font-size: 3.3rem;
+  }
 }
-h1 {
-  color: #f4f7f5;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+@media (max-width: 1500px) and (min-width: 767px) {
+  body {
+    background-color: #595959 !important;
+    margin: 0;
+    padding: 0;
+  }
+  .course {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 1.2rem;
+    border: 3px solid #595959;
+    color: #f4f7f5;
+  }
+  .course img {
+    width: 100px;
+    height: 90px;
+  }
+  .main {
+    top: 6rem;
+  }
+  .fixed {
+    position: fixed;
+    top: 30rem;
+    width: 30%;
+  }
+  .detail {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: #f4f7f5;
+  }
+  .vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
 }
-h2,
-h3,
-h4,
-p {
-  color: #f4f7f5;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
-.menu {
-  background-color: #6CC6E8;
-  padding: 0.8rem;
-}
-.course {
-  position: relative;
-  display: inline-block;
-  float: left;
-  list-style: none;
-  list-decoration: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-top: 1.6rem;
-  margin-bottom: 1.6rem;
-  padding: 1.3rem;
-}
-.selectedCourse {
-  background-color: red;
+@media screen and (min-width: 1500px) {
+  body {
+    background-color: #595959 !important;
+    margin: 0;
+    padding: 0;
+  }
+  .course {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 1.2rem;
+    border: 3px solid #595959;
+    color: #f4f7f5;
+  }
+  .course img {
+    width: 100px;
+    height: 90px;
+  }
+  .main {
+    top: 6rem;
+  }
+  .fixed {
+    position: fixed;
+    top: 20rem;
+    width: 30%;
+  }
+  .detail {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: #f4f7f5;
+  }
+  .vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
 }

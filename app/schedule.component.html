@@ -1,3 +1,19 @@
-<html>
-<h1>My Schedule</h1>
-</html>
+
+<div class="container">
+    <table class="table table-hover schedule">
+        <thead>
+        <tr>
+            <th class="scheduleTH">Course Name</th>
+            <th>Course ID</th>
+            <th>Course Schedule</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let course of courses">
+            <td>{{ course.name }}</td>
+            <td>{{ course.id }}</td>
+            <td>{{ course.schedule }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

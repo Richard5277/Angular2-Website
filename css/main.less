@@ -6,7 +6,6 @@
   font-family: mBlack;
   src: url(../fonts/Merriweather-Black.ttf);
 }
-
 @font-face {
   font-family: mBoldItalic;
   src: url(../fonts/Merriweather-BoldItalic.ttf);
@@ -37,38 +36,142 @@
 }
 
 /* Master Styles */
-body {
-  background-color: @mainBackgroundColor;
-  margin: 2em;
-}
-h1 {
-  color: @bodyColorOne;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
-}
-h2, h3, h4, p {
-  color: @bodyColorOne;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: @mainBackgroundColor !important;
+    margin: 0;
+    padding:0;
+  }
+
+  .course {
+    background-color: rgba(0,0,0,0.7);
+    padding-bottom: 1.2rem;
+    border: 3px solid @mainBackgroundColor;
+    color: @bodyColorOne;
+  }
+
+  .course img {
+    width:100px;
+    height:90px;
+  }
+
+  .main {
+    top:20rem;
+    color: @bodyColorOne;
+  }
+
+  .fixed {
+    position: fixed;
+    top: 30rem;
+    width: 30%;
+  }
+
+  .detail {
+    background-color: rgba(0,0,0,0.7) !important;
+    color: @bodyColorOne;
+  }
+
+  .vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-brand {
+    font-size:3.3rem;
+  }
 }
 
-.menu {
-  background-color: @bodyColorTwo;
-  padding: 0.8rem;
+@media (max-width:1500px) and (min-width:767px){
+  body {
+    background-color: @mainBackgroundColor !important;
+    margin: 0;
+    padding:0;
+  }
+
+  .course {
+    background-color: rgba(0,0,0,0.7);
+    padding-bottom: 1.2rem;
+    border: 3px solid @mainBackgroundColor;
+    color: @bodyColorOne;
+  }
+
+  .course img {
+    width:100px;
+    height:90px;
+  }
+
+  .main {
+    top:6rem;
+  }
+
+  .fixed {
+    position: fixed;
+    top: 30rem;
+    width: 30%;
+  }
+
+  .detail {
+    background-color: rgba(0,0,0,0.7) !important;
+    color: @bodyColorOne;
+  }
+
+  .vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    font-size:1.3rem;
+  }
 }
 
-.course{
-  position: relative;
-  display: inline-block;
-  float: left;
-  list-style: none;
-  list-decoration:none;
-  background-color: rgba(0,0,0,0.8);
-  margin-top: 1.6rem;
-  margin-bottom: 1.6rem;
-  padding:1.3rem;
-}
+@media screen and (min-width: 1500px){
+  body {
+    background-color: @mainBackgroundColor !important;
+    margin: 0;
+    padding:0;
+  }
 
-.selectedCourse {
-  background-color: red;
+  .course {
+    background-color: rgba(0,0,0,0.7);
+    padding-bottom: 1.2rem;
+    border: 3px solid @mainBackgroundColor;
+    color: @bodyColorOne;
+
+  }
+
+  .course img {
+    width:100px;
+    height:90px;
+  }
+
+  .main {
+    top:6rem;
+  }
+
+  .fixed {
+    position: fixed;
+    top: 20rem;
+    width: 30%;
+  }
+
+  .detail {
+    background-color: rgba(0,0,0,0.7) !important;
+    color: @bodyColorOne;
+  }
+
+  .vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    font-size:1.3rem;
+  }
 }

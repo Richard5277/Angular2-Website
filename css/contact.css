@@ -1,0 +1,207 @@
+@font-face {
+  font-family: mBlack;
+  src: url(../fonts/Merriweather-Black.ttf);
+}
+@font-face {
+  font-family: mBoldItalic;
+  src: url(../fonts/Merriweather-BoldItalic.ttf);
+}
+@font-face {
+  font-family: mBold;
+  src: url(../fonts/Merriweather-Bold.ttf);
+}
+@font-face {
+  font-family: asapRetular;
+  src: url(../fonts/Asap/Asap-Regular.ttf);
+}
+@font-face {
+  font-family: asapBold;
+  src: url(../fonts/Asap/Asap-Bold.ttf);
+}
+@font-face {
+  font-family: asapItalic;
+  src: url(../fonts/Asap/Asap-Italic.ttf);
+}
+@font-face {
+  font-family: asapBoldItalic;
+  src: url(../fonts/Asap/Asap-BoldItalic.ttf);
+}
+@font-face {
+  font-family: chunkfive;
+  src: url(../fonts/Chunkfive.otf);
+}
+contact {
+  margin: 0;
+  padding: 0;
+  font-family: asapRetular;
+  background-color: #595959;
+}
+h1 {
+  color: #f4f7f5;
+  font-family: chunkfive;
+}
+h2 {
+  color: #6CC6E8;
+  font-family: asapBoldItalic;
+}
+h3 {
+  color: #6CC6E8;
+  font-family: asapBoldItalic;
+}
+p {
+  color: #f4f7f5;
+}
+a {
+  text-decoration: none;
+  color: #f4f7f5;
+}
+a:hover {
+  color: #6CC6E8;
+}
+.button {
+  font-family: asapRetular;
+  background-color: #595959;
+  color: #f4f7f5;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+blockquote,
+footer {
+  font-family: asapItalic;
+  color: #6CC6E8;
+}
+.cClass {
+  font-family: mBoldItalic;
+}
+.bodyMark {
+  font-family: asapBoldItalic;
+  background-color: transparent;
+  color: #6CC6E8;
+}
+.googleLink {
+  font-family: asapBoldItalic;
+  color: #f4f7f5;
+}
+.googleLink:hover {
+  color: #6CC6E8;
+}
+@media screen and (min-width: 1500px) {
+  contact {
+    margin: 6vw 25vw;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2.3em;
+  }
+  h3 {
+    font-size: 1.65em;
+  }
+  [class^=fa] {
+    padding-right: 15px;
+  }
+  p {
+    font-size: 1.35em;
+    line-height: 1.4em;
+  }
+  a {
+    margin: 6px;
+  }
+  .button {
+    padding: 9px 12px;
+    border: 4px solid #f4f7f5;
+    font-size: 1.3em;
+  }
+  blockquote {
+    font-size: 1.42em;
+  }
+  .cClass {
+    font-size: 1.65em;
+  }
+  .bodyMark {
+    font-size: 1.66em;
+  }
+  .googleLink {
+    font-size: 1.13em;
+  }
+}
+@media (max-width: 1500px) and (min-width: 767px) {
+  contact {
+    margin: 6vw 15vw;
+  }
+  h1 {
+    font-size: 3.0em;
+  }
+  h2 {
+    font-size: 2.4em;
+    line-height: 1.2em;
+  }
+  h3 {
+    font-size: 1.36em;
+  }
+  [class^=fa] {
+    padding-right: 0.4em;
+  }
+  p {
+    font-size: 1.25em;
+    line-height: 1.18em;
+  }
+  .button {
+    padding: 6px 9px;
+    border: 3px solid #f4f7f5;
+    border-radius: 5px;
+    font-size: 1.1em;
+  }
+  blockquote {
+    font-size: 1.18em;
+  }
+  .cClass {
+    font-size: 1.61em;
+  }
+  .bodyMark {
+    font-size: 1.06em;
+  }
+  .googleLink {
+    font-size: 1.08em;
+  }
+}
+@media screen and (max-width: 767px) {
+  contact {
+    margin: 3.5vw 5.5vw 4.7vw 5.5vw;
+  }
+  h1 {
+    font-size: 2.8em;
+  }
+  h2 {
+    font-size: 2.36em;
+  }
+  h3 {
+    font-size: 1.56em;
+  }
+  [class^=fa] {
+    padding-right: 0.3em;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  .button {
+    padding: 5px 6px;
+    border: 2px solid #f4f7f5;
+    font-size: 1em;
+  }
+  blockquote {
+    font-size: 1.18em;
+  }
+  .cClass {
+    font-size: 1.38em;
+  }
+  .bodyMark {
+    font-size: 1.36em;
+  }
+  .googleLink {
+    font-size: 1.1em;
+  }
+}

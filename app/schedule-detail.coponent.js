@@ -9,18 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var courses_data_1 = require('./courses-data');
-var CourseService = (function () {
-    function CourseService() {
+var course_1 = require('./course');
+var ScheduleDetailComponent = (function () {
+    function ScheduleDetailComponent() {
     }
-    CourseService.prototype.getCourses = function () {
-        return Promise.resolve(courses_data_1.COURSES);
-    };
-    CourseService = __decorate([
-        core_1.Injectable(), 
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', course_1.Course)
+    ], ScheduleDetailComponent.prototype, "course", void 0);
+    ScheduleDetailComponent = __decorate([
+        core_1.Component({
+            selector: 'schedule-detail',
+            template: "\n    <div *ngIf=\"course\">\n        <h2>Course Schedule: {{course.schedule}}</h2>\n    </div>\n  ",
+            styleUrls: ['../css/schedule.css']
+        }), 
         __metadata('design:paramtypes', [])
-    ], CourseService);
-    return CourseService;
+    ], ScheduleDetailComponent);
+    return ScheduleDetailComponent;
 }());
-exports.CourseService = CourseService;
-//# sourceMappingURL=course.service.js.map
+exports.ScheduleDetailComponent = ScheduleDetailComponent;
+//# sourceMappingURL=schedule-detail.coponent.js.map
