@@ -14,6 +14,8 @@ then npm start to check the website;
 
 *** Use Command Prompt get into 'Feihong Zhao' folder
 
+*** run command : npm install 
+
 *** run command : npm start
 
 *** Website shows
